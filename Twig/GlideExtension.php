@@ -3,8 +3,10 @@
 namespace Erichard\GlideBundle\Twig;
 
 use Erichard\GlideBundle\GlideUrlBuilder;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
-class GlideExtension extends \Twig_Extension
+class GlideExtension extends AbstractExtension
 {
     protected $glideUrlBuilder;
 
@@ -16,7 +18,7 @@ class GlideExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('glideUrl', [$this, 'glideUrl']),
+            new TwigFunction('glideUrl', [$this, 'glideUrl']),
         ];
     }
 
