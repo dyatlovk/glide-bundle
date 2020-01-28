@@ -1,5 +1,5 @@
 {
-    "name": "erichard/glide-bundle",
+    "name": "dyatlovk/glide-bundle",
     "description": "Integrate league/glide in your Symfony app",
     "license": "MIT",
     "autoload": {
